@@ -1,5 +1,9 @@
 
 <% include partials/header %>
+<style>
+ h4 .btn-group{display: inline-block};
+  
+</style>
 
 <div class = "container">
 <header class = "jumbotron">
@@ -18,9 +22,16 @@
                    <div class = "col-md-6 ">
                         <div class = "thumbnail">
                             <img src = "<%= campground.image %>">
-                            <div class = "caption">
-                                <h4><%= campground.name %></h4>
-                            </div>
+                           
+                                    <h4><%= campground.name %></h4>
+                                <span class = "btn-group">                                       
+                                    
+                                    <button type="button" class="btn btn-success">Vote</button>
+                                    <h2> <%= voteNumber %> </h2>
+                                </span>
+                                    
+                                
+                           
                         </div>
                     </div>
                         
